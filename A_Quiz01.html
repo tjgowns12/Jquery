@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+.drag{text-align:center; width: 150px;height: 100px;border-style: solid;position: absolute;right: 10px;top: 10px;}
+.h4{background-color:darkkhaki;text-align:center;margin:3px; }
+.drag img{width:30px;height: 30px;}
+.fix{display: flex;padding-left: 10px;padding-top: 15px;}
+.fvalue{width: 50px;}
+</style>
+
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="jquery-1.12.1-ui.js"></script>
+
+<script type="text/javascript">
+var font=15;
+
+$(document).ready(function() { $("#draggable" ).draggable(); });
+
+$(document).ready(function(){
+	$("button.sub").click(function(){
+		//$("div.test").css({"font-size":font-=3 });
+		$("div.test").animate({ fontSize:font-=3 });
+		$("span").text(font);
+		
+	});
+});
+
+$(document).ready(function(){
+	$("button.add").click(function(){
+		$("div.test").css({"font-size":font+=3 });
+		$("span").text(font);
+	});
+});
+	
+</script>
+
+
+
+</head>
+<body>
+<div class="test">
+<h1>오늘의 소설</h1>
+<h5>오늘도 덥다</h5>
+<h5>내일도 덥다</h5>
+<h5>모래는 바다</h5>
+</div>
+
+<div id="draggable" class="drag">
+<h4 class="h4">리 모 콘</h4>
+<div class="fix">
+<button class="sub"><img src="sub.jpg"></button>
+<span class="fvalue"style="background-color: yellow"> 15 </span>
+<button class="add"><img src="add.png"></button>
+</div>
+</div>
+</body>
+</html>

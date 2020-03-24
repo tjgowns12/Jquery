@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drag and Drop test 심심함</title>
+<style>
+.drag{width: 200px;height: 100px;padding: 0.5em;
+		background-color: red;border-style: solid;}
+	
+
+</style>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="jquery-1.12.1-ui.js"></script>
+<script type="text/javascript">
+$(document).ready(function() { $("#draggable" ).draggable(); });
+</script>
+</head>
+<body>
+<!--"jquery-1.12.1-ui.js <이게 있어야 ui관련 기능을 더 쓸수있다  -->
+<div id="draggable" class="drag">
+<p>Drag me around</p>
+</div>
+</body>
+</html>

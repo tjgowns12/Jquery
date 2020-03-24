@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $(".button").click(function () {
+            $("p").hide();
+        });
+    });
+    $().ready(function () {
+        $(".button").click(function () {
+        $("p").hide();
+        });
+    });
+    
+    $(function () {
+        $("button").click(function () {
+            $("p").hide();
+        });
+    $("button.show").click(function (){
+    	$('p').show();
+    });
+   });
+        
+        /*
+        function test(){
+        	 $("p").hide();
+        }
+        */
+    </script> </head> <body>
+    <p>메시지 : 제이쿼리를 공부하고 있습니다.</p>
+    <button>메시지 삭제</button>
+    <button class="show">메시지 보이기</button>
+<!-- $문법을 쓸려면 "jquery-3.2.1.min.js"이 있어야 한다 ->외부에서 제이쿼리를 가져옴 -->
+<!--  jquery를 다운받아 사용한다  구글검색 하고 다른이름저장하고 프로젝트에다 넣어준다.-->
+</body>
+</html>
